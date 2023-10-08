@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flames</title>
+    <link rel="stylesheet" href="./flames.css">
+</head>
+
+<body>
+    <div class="flames-parent" id="myDiv">
+        <form onsubmit="return checkUserEnteredData(event)">
+            <h3>FLAMES</h3>
+            <label for="boyName">Enter Boy Name :</label>
+            <input type="text" placeholder="Boy Name" name="boyName" onkeyup="return condition1(event)"
+                id="boyName" required>
+            <p id="error1">ui</p>
+            <label for="girlName">Enter Girl Name :</label>
+            <input type="text" placeholder="Girl Name" name="girlName" onkeyup="return condition2(event)"
+                id="girlName" required>
+            <p id="error2">ui</p>
+            <button type="submit" id="submitBtn">Submit</button>
+        </form>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="./flames.js"></script>
+</body>
+
+</html>
